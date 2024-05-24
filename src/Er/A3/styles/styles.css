@@ -1,0 +1,71 @@
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-size: 12px;
+  text-align: left;
+}
+
+.contenido {
+  margin: auto;
+  width: 680px;
+}
+
+.fecha {
+  font-size: 13px;
+  color: rgb(146, 146, 153);
+  display: block;
+}
+
+.titulo h1 {
+  font-size: 45px;
+}
+
+.titulo h3 {
+  font-size: 22px;
+}
+
+.redes {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.redes img {
+  width: 20px;
+  filter: opacity(0.3) drop-shadow(0 0 0 gray);
+}
+
+.imagen img {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  margin-left: -120px;
+  border-radius: 10px;
+}
+
+.imagen p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(146, 146, 153);
+  margin-top: 10px;
+}
+
+.pie h4 {
+  font-size: 22px;
+}
+
+.seccion {
+  font-size: 19px;
+}
+
+.title-contacts {
+  margin: 50px 0px 10px 0px;
+}
+
+.contactos {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+}
+
+.opcion-contactos h3 {
+  margin-bottom: auto;
+}
