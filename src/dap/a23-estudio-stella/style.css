@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    margin: 5vh 10vh;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    padding: 10px 20px;
+    
+    
+    align-content: center;
+    align-items: center;
+}
+
+header img {
+    max-width: 40px;
+    height: auto;
+    filter: grayscale(2);
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+header .logo img {
+    margin: 8%;
+}
+
+header .logo {
+    grid-template-columns: 9% 91%;
+}
+
+header .menu-options {
+    grid-template-columns: repeat(4, 25%);
+}
+
+header .menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .menu img {
+    border: 1px solid #000;
+    padding: 1%;
+}
+
+header .menu-options a {
+    text-decoration: none;
+    color: #9b9b9b;
+    font-size: 0.9rem;
+}
+
+
+header .menu-options a img {
+    width: 15px;
+    margin-left: 5px;
+}
+
+
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container .container-title{
+    margin: 5vh 10vh;
+}
+
+.container .container-text{
+    background-color: #212a33; 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: #ffffff;
+    padding: 4% 8%;
+    height: 60vh;
+}
+
+.container-title h1{
+    display: inline-block;
+    font-size: 7rem;
+    font-weight: 400;
+    margin: 5% 5% 3% 5%;
+}
+
+.container-title .title-button{
+    display: flex;
+    margin: 1% 5% 1% 5%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-title .title-button div{
+    width: 50%;
+}
+
+button{
+    border: none;
+    padding: 3% 4% 3% 4%;
+    border-radius: 40px;
+    margin-right: 1%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.title-button button:nth-child(1){
+    background-color: #212a33;
+    color: #fff;
+}
+
+.title-button a{
+    margin-right: 20px;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+}
+
+.title-button div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-text .avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5% 5% 5% 5%;
+    filter: grayscale(1);
+
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-text-section{
+    margin: 1vh 10vw 10vh 8vw;
+}
+
+.container-text-section h2 {
+    font-size: 4vw;
+    margin-bottom: 5%;
+    font-weight: 400;
+}
+
+.container-text-section p {
+    line-height: 25px;
+    margin-bottom: 7%;
+    font-size: 0.9em;
+}
+
+.text-image{
+    display: flex;
+    padding-bottom: 5vh;
+    z-index: 2;
+    position: relative;
+    left: 50px;
+    bottom: 400px;
+
+}
+.text-image img{
+   width: 500px;
+   height: 700px; 
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    header {
+        margin: 1vh 2svh;
+    }
+
+    header .menu-options{
+        display: none;
+    }
+
+    header div {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        padding: 10px 8px;
+        
+        align-content: center;
+        align-items: center;
+    }
+
+    header .logo span{
+        font-size: 12px;
+    }
+
+    header .logo {
+        grid-template-columns: 30% 70%;
+    }
+
+    header .logo img {
+        margin: 1%;
+    }
+
+    .container-title h1{
+        font-size: 3rem;
+        font-weight: 100;
+        margin: 5% 8% 3% 8%;
+    }
+    .container-title h1 img{
+        width: 30px;
+    }
+
+    .container-title .title-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-title .title-button div{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .title-button div:nth-child(1) {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .title-button div:nth-child(2) {
+        justify-content: center;
+        
+
+    }
+    .title-button div:nth-child(2) a {
+        margin: 5% 5%;
+    }    
+
+    .container-title .title-button a{
+        margin-right: 20px;
+        font-size: 0.7rem;
+    }
+
+    .title-button button {
+        padding: 7% 11%;
+        border-radius: 40px;
+        margin-right: 2%;
+        margin-left: 2%;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .text-image, .avatar {
+        display: none;
+    }
+
+    .container .container-text {
+        grid-template-columns: 100%;
+        height:auto;
+        padding: 10% 2% 4% 2%;
+        margin-top: 10%;
+    }
+
+    .container-text-section h2 {
+        font-size: 3rem;
+        margin-bottom: 5%;
+        font-weight: 400;
+    }
+    .container .container-title {
+        margin: auto;
+    }
+    .container-text button {
+        border: none;
+        padding: 8% 9% 8% 9%;
+        border-radius: 40px;
+        margin-right: 1%;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+    }
+
+}
