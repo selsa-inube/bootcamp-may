@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: white;
+}
+
+.principal {
+  display: grid;
+  margin: 50px;
+  grid-template-columns: 150px 800px;
+}
+
+.lateral {
+  width: 150px;
+  height: 800px;
+  display: grid;
+  position: relative;
+  border: 1.5px solid rgb(233, 233, 233);
+}
+
+.cabecera {
+  height: 90px;
+  width: 800px;
+  display: grid;
+  position: relative;
+  border: 1.5px solid rgb(233, 233, 233);
+  border-left: none;
+  border-bottom: none;
+}
+
+.calendario-cabecera {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: repeat(2, 50%);
+  align-items: center;
+}
+
+.calendario-cabecera span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.select {
+  border: 1px solid gray;
+  border-radius: 28px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 20px;
+}
+
+.clase-boton {
+  display: grid;
+  justify-content: right;
+}
+
+.boton {
+  border: 1px solid gray;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 7px 25px;
+  cursor: pointer;
+  background-color: darkslateblue;
+  color: white;
+  justify-content: right;
+}
+
+.boton:hover {
+  background-color: purple;
+}
+
+.contenido {
+  width: 800px;
+  margin-left: 150px;
+  margin-top: 90px;
+  border: 1.5px solid rgb(233, 233, 233);
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(9, 11.11%);
+  grid-template-rows: repeat(6, 118px);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.dia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid rgb(233, 233, 233);
+  border-left: none;
+  border-top: none;
+}
+
+.dia img {
+  width: 25px;
+  height: 25px;
+}
+
+.dia-texto {
+  display: grid;
+  text-align: center;
+}
+
+.mes {
+  font-size: 16px;
+}
+
+.numero {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dia-semana {
+  font-size: 16px;
+}
+
+.hora {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  border: 1.5px solid rgb(233, 233, 233);
+  border-left: none;
+  border-top: none;
+}
+
+.hora span {
+  font-size: 16px;
+  color: gray;
+}
+
+.dia-hora-ocupado {
+  display: grid;
+  border: 1.5px solid rgb(233, 233, 233);
+  border-left: none;
+  border-top: none;
+}
+
+.cabeza {
+  display: grid;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: antiquewhite;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.perfil {
+  display: grid;
+  justify-content: right;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.perfil img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid darkgrey;
+  justify-content: left;
+}
+
+.confirmado {
+  display: grid;
+  justify-content: right;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.confirmado img {
+  width: 10px;
+  height: 10px;
+}
+
+.resumen {
+  display: grid;
+  grid-template-columns: 1 auto;
+}
+
+.dia-hora-ocupado .hora {
+  font-size: 12px;
+  color: lightblue;
+}
+
+.dia-hora-ocupado .asunto {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dia-hora-libre {
+  display: grid;
+  border: 1.5px solid rgb(233, 233, 233);
+  border-left: none;
+  border-top: none;
+}
+
+.cabeza:hover {
+  height: 130%;
+  left: -30px;
+  top: -50px;
+  z-index: 2;
+  position: relative;
+}
