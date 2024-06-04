@@ -24,15 +24,18 @@ body {
 #contacts {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     display: grid;
-    grid-gap: 1rem;
 }
 
 #content-image {
     margin: 15px 0px 50px 0px;
+    width: 700px;
 }
 
-#content-image-text {
-    display: inline-flex;
+#content-image>figure {
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #a-arrow {
@@ -44,21 +47,30 @@ body {
 }
 
 #a-arrow>img {
-    width: 12px;
+    width: 10px;
+    padding: 6px;
+}
+
+#a-arrow>img:hover {
+    background: rgb(220, 220, 220);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #image-1 {
     display: flex;
     justify-content: center;
-    margin-left: -120px;
+    /* margin-left: -120px; */
     border-radius: 10px;
 }
 
 #imagen-text {
-    font-size: 14px;
+    display: inline-flex;
+    font-size: 12px;
     font-weight: 700;
     color: rgb(146, 146, 153);
     margin-top: 10px;
+    letter-spacing: 0.04em;
 }
 
 #section {
@@ -83,6 +95,27 @@ h1 {
     font-size: 1.5em;
 }
 
+.social-networks{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.group-social-networks{
+    display: flex;
+}
+
+.social-networks li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+.social-networks li img{
+    filter: grayscale(100%);
+    width: 20px;
+}
+ 
+
 .btn-social-networks {
     background-color: transparent;
     border: none;
@@ -96,6 +129,7 @@ h1 {
 
 .a-content {
     display: flex;
+    margin-left: 10px;
 }
 
 .paragraphs {
@@ -104,8 +138,12 @@ h1 {
 
 p {
     margin-top: 30px;
+    line-height: 1.421103;
+    letter-spacing: .012em;
+    font-size: 18px;
 }
 
 .contacts-option>h3 {
     margin-bottom: auto;
 }
+
