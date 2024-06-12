@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    font-family: Arial;
+    color: rgb(121, 120, 120);
+    border: 1px solid #ccc; 
+}
+
+.hora {
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 20px;
+
+}
+li{
+    font-weight: bold;
+}
+.dia {
+    grid-column: span 1;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.celda {
+    padding: 5px;
+    min-height: 100px;
+    border: 1px solid #ccc;
+
+}
+
+.lista {
+    list-style: none;
+}
+
+.lista:nth-child(2) {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+.hora > p {
+    margin-top: 15px;
+    margin-bottom: 35px; 
+    margin-left: 30px;
+}
+
+p{
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+    color: #080808c2;
+}
+.p2{
+    color: #308FEE;
+}
+.p3{
+    color: #F07F15;
+}
+.p4{
+    color: #43D159;
+}
+.p5{
+    color: #EC2C15;
+}
+.icono {
+    font-size: 40px;
+    margin-top: 25px;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.numero-dia{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+}
+
+.enlace {
+    color: rgb(121, 120, 120);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.celda > .contenido {
+    background-color: #EFF7F9;
+    margin: 5%;
+    border-radius: 5%;
+    padding: 5%;
+    transition: transform 0.3s ease;
+    border: 0.5px solid #CDC6C4;
+}
+
+.celda > .contenido > p {
+    margin: 4% 0;
+}
+
+.imagen {
+    width: 2.4em;
+    border-radius: 50%;
+    border: 2.5px solid #ccc;
+}
+
+.contenedor > .celda:nth-child(14) > .contenido, .contenedor > .celda:nth-child(17) > .contenido {
+    background-color: #D2F1EF;
+    color: #1037C8;
+    
+}
+
+.contenedor > .celda:nth-child(21) > .contenido, .contenedor > .celda:nth-child(43) > .contenido {
+    background-color: #FDDECD;
+    color: #6F4926;
+}
+
+.contenedor > .celda:nth-child(24) > .contenido {
+    background-color: #D2F5C0;
+    color: #18580E;
+}
+
+.celda > .contenido:hover {
+    transform: translate(-20px, -20px);
+}
