@@ -3,32 +3,22 @@
     grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     font-family: Arial;
     color: #797878;
-    border: 1px solid #ccc; 
 }
 
 .hora {
     text-align: right;
     padding-right: 20px;
     margin-top: 20px;
-
-}
-
-li {
-    font-weight: bold;
 }
 
 .dia {
-    grid-column: span 1;
     text-align: center;
     padding: 15px;
-    border-bottom: 1px solid #ccc;
 }
 
 .celda {
     padding: 5px;
-    min-height: 100px;
     border: 1px solid #ccc;
-
 }
 
 .lista {
@@ -48,6 +38,9 @@ p {
 h3 {
     font-weight: bold;
     color: #080808c2;
+}
+li {
+    font-weight: bold;
 }
 
 .p2 {
@@ -87,7 +80,7 @@ h3 {
 }
 
 .enlace {
-    color: rgb(121, 120, 120);
+    color: #787777;
     text-decoration: none;
     margin-right: 30px;
 }
@@ -104,8 +97,7 @@ h3 {
 .icono-derecho {
     position: absolute;
     right: 10px;
-    top: 30px;
-    transform: translateY(-50%);
+    top: 15px;
     font-size: 24px;
     color: #57de43;
 }
@@ -129,7 +121,7 @@ body {
 
 .celda:nth-child(14) .contenido, 
 .celda:nth-child(17) .contenido {
-    background-color: #D2F1EF;
+    background-color: #a8f0eb;
     color: #1037C8;
 
 }
