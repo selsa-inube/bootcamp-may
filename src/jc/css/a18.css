@@ -89,11 +89,15 @@ li {
     position: relative; 
     background-color: #EFF7F9;
     margin: 5%;
-    border-radius: 5%;
+    border-radius: 7%;
     padding: 5%;
     transition: transform 0.3s ease;
     border: 0.5px solid #CDC6C4;
 }
+.contenido:hover {
+    transform: translate(-40px, -20px);
+}
+
 .icono-derecho {
     position: absolute;
     right: 10px;
@@ -103,14 +107,6 @@ li {
 }
 .ion2{
     color: #616c60;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-.contenido > p {
-    margin: 4% 0;
 }
 
 .imagen {
@@ -135,8 +131,4 @@ body {
 .celda:nth-child(24) .contenido {
     background-color: #D2F5C0;
     color: #18580E;
-}
-
-.contenido:hover {
-    transform: translate(-40px, -20px);
 }
