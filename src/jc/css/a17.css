@@ -181,7 +181,7 @@ body {
     margin-right: 10px;
 }
 
-#perfil .tooltip .tooltip-header {
+#perfil .tooltip-header {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
