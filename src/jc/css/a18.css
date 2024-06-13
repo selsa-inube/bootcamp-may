@@ -1,13 +1,8 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
 .contenedor {
     display: grid;
     grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     font-family: Arial;
-    color: rgb(121, 120, 120);
+    color: #797878;
     border: 1px solid #ccc; 
 }
 
@@ -17,9 +12,11 @@ body{
     margin-top: 20px;
 
 }
-li{
+
+li {
     font-weight: bold;
 }
+
 .dia {
     grid-column: span 1;
     text-align: center;
@@ -44,44 +41,46 @@ li{
     color: black;
 }
 
-.hora > p {
-    margin-top: 15px;
-    margin-bottom: 35px; 
-    margin-left: 30px;
-}
-
-p{
+p {
     font-weight: bold;
 }
-h3{
+
+h3 {
     font-weight: bold;
     color: #080808c2;
 }
-.p2{
+
+.p2 {
     color: #308FEE;
 }
-.p3{
+
+.p3 {
     color: #F07F15;
 }
-.p4{
+
+.p4 {
     color: #43D159;
 }
-.p5{
+
+.p5 {
     color: #EC2C15;
 }
+
 .icono {
     font-size: 40px;
-    margin-top: 25px;
+    font-weight: bold;
+    margin-top: 35px;
     color: #000;
     text-align: center;
     display: inline-block;
     width: 50px;
     line-height: 50px;
-    border: 1px solid #ccc;
     border-radius: 50%;
     margin-left: 40px;
+    background-color: #bcbbbb;
 }
-.numero-dia{
+
+.numero-dia {
     font-size: 50px;
     font-weight: bold;
     color: #000;
@@ -93,7 +92,8 @@ h3{
     margin-right: 30px;
 }
 
-.celda > .contenido {
+.contenido {
+    position: relative; 
     background-color: #EFF7F9;
     margin: 5%;
     border-radius: 5%;
@@ -101,8 +101,23 @@ h3{
     transition: transform 0.3s ease;
     border: 0.5px solid #CDC6C4;
 }
+.icono-derecho {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #57de43;
+}
+.ion2{
+    color: #616c60;
+}
 
-.celda > .contenido > p {
+body {
+    margin: 0;
+    padding: 0;
+}
+.contenido > p {
     margin: 4% 0;
 }
 
@@ -112,22 +127,24 @@ h3{
     border: 2.5px solid #ccc;
 }
 
-.contenedor > .celda:nth-child(14) > .contenido, .contenedor > .celda:nth-child(17) > .contenido {
+.celda:nth-child(14) .contenido, 
+.celda:nth-child(17) .contenido {
     background-color: #D2F1EF;
     color: #1037C8;
-    
+
 }
 
-.contenedor > .celda:nth-child(21) > .contenido, .contenedor > .celda:nth-child(43) > .contenido {
+.celda:nth-child(21) .contenido, 
+.celda:nth-child(43) .contenido {
     background-color: #FDDECD;
     color: #6F4926;
 }
 
-.contenedor > .celda:nth-child(24) > .contenido {
+.celda:nth-child(24) .contenido {
     background-color: #D2F5C0;
     color: #18580E;
 }
 
-.celda > .contenido:hover {
-    transform: translate(-20px, -20px);
+.contenido:hover {
+    transform: translate(-40px, -20px);
 }
