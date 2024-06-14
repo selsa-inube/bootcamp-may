@@ -12,7 +12,6 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    border-bottom: 1px solid #eee;
 }
 
 .logo {
@@ -57,7 +56,6 @@ nav a {
 .icono-menu ion-icon {
     font-size: 30px;
     color: #333;
-    cursor: pointer;
 }
 
 .heroe {
@@ -133,7 +131,7 @@ h1 {
 .acerca {
     background-color: #1a1a1a;
     color: #fff; 
-    padding: 50px 20px;
+    padding: 50px;
 }
 
 .acerca-content {
@@ -190,8 +188,6 @@ h1 {
     width: 500px;
     height: 800px;
     object-fit: cover;
-    aspect-ratio: 1 / 2;
-    max-height: none;
     margin-bottom: -150px;
 }
 
@@ -222,11 +218,7 @@ h1 {
     color: #000;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-top: 70px;
     font-weight: bold;
 }
 
-.crecimiento button:hover {
-    background-color: #ddd;
-}
