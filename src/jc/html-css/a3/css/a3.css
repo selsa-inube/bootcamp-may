@@ -5,7 +5,7 @@ body {
     padding: 20px;
     text-align: center;
 }
-.content {
+.contenido {
     max-width: 630px;
     margin: 0 auto;
 }
@@ -19,10 +19,10 @@ h1 {
 p {
     font-size: 18px;
     line-height: 1.5;
-    font-weight: 500;
     text-align: left;
 }
-.fecha{
+time{
+    display: grid;
     font-size: 12px;
     line-height: 1.5;
     font-weight: bold;
@@ -35,19 +35,27 @@ p {
     font-weight: 550;
     text-align: left;
 }
-.image {
+.imagen {
     margin-top: 70px;
 
 }
-.image img {
+.imagen img {
 
     height: 500px;
     width: 900px; 
 }
-.text{
+.texto{
     max-width: 630px;
     margin: 0 auto;
     margin-top: 70px;
+}
+.texto-imagen{
+    max-width: 630px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #949ca6;
 }
 .minititulo{
     font-size: 20px;
@@ -66,7 +74,7 @@ li{
     font-size: 24px;
     margin-top: 50px;
 }
-.share{
+.compartir{
     font-size: 20px;
     margin-top: 50px;
 }
@@ -83,13 +91,7 @@ h3{
 }
 .minititulo2{
     font-size: 20px;
-    letter-spacing: -0.022em;
     margin-bottom: 0.5px;
-}
-.ultimap{
-    line-height: 1.5;
-    font-weight: 500;
-    margin-top: 0; 
 }
 a{
     font-size: 14px;
@@ -97,13 +99,13 @@ a{
     text-align: left;
     font-weight: bold;
 }
-.social-icons {
+.social-iconos {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
     margin-top: 20px;
 }
-.social-icons img {
+.social-iconos img {
     width: 25px;
     height: 25px;
     opacity: 0.5;
