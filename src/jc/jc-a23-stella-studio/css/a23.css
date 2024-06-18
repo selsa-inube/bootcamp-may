@@ -222,3 +222,94 @@ h1 {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px; 
+    }
+
+    .logo img {
+        height: 80px; 
+    }
+    .stella {
+        font-size: 30px; 
+    }
+    .icono-menu {
+        margin-right: -370px; 
+    }
+    ion-icon.md.hydrated {
+        font-size: 40px; 
+    }
+    div.heroe-left{
+        margin-left: 50px;
+    }
+    .heroe-left h1:nth-child(1) {
+        font-size: 80px; 
+        margin-right: -100px; 
+    }
+    .heroe-left h1:nth-child(2) {
+        font-size: 80px; 
+        margin-right: -400px; 
+    }
+
+    .heroe-left h1:nth-child(3) {
+        font-size: 80px; 
+        margin-right: -400px; 
+    }
+    .cta-etiquetas {
+        font-size: 30px; 
+        display: grid;
+        margin-left: 150px;
+        grid-gap: 70px; 
+    }
+    .botones-cta button {
+        font-size: 30px; 
+        padding: 12px 24px; 
+        border-radius: 70px; 
+        width: 240px;
+        height: 100px;
+    }
+    .etiquetas {
+        margin-right: 20px; 
+        text-align: center; 
+        margin-left: -145px;
+    }
+    .etiquetas span {
+        font-size: 40px; 
+        margin-right: 50px; 
+    }
+    .acerca{
+        width: 800px;
+    }
+    .acerca-content {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0;
+    }
+    .fundador,
+    .escaleras {
+        display: none; 
+    }
+
+    .crecimiento {
+        margin-top: 20px; 
+    }
+    .crecimiento > h2{
+        font-size: 125px;
+    }
+    .crecimiento > p {
+        font-size: 40px;
+        color: #bbb;
+    }
+    .crecimiento button {
+        font-size: 30px; 
+        padding: 12px 24px; 
+        border-radius: 70px; 
+        width: 600px;
+        height: 100px;
+    }
+}
