@@ -87,7 +87,7 @@ nav > .icon{
     padding: 20px;
     font-size: 40px;
 }
-
+   
 ul{
     list-style: none;
     display: flex;
@@ -254,6 +254,3 @@ section nav ul li {
     color: #777272;
 }
 
-section nav > div > p {
-    margin: 0 10px; 
-}
