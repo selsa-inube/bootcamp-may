@@ -1,0 +1,265 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #F7F7F7;
+    margin-left: 6.5%;
+    font-family: Cambria;
+    box-sizing: border-box;
+    
+}
+
+ul:first-child {
+    left: 0;
+    position: fixed;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    width: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px; 
+    padding-bottom: 20px; 
+}
+
+ul:first-child .icon {
+    color: black; 
+    width: 24px;
+    height: 40px;
+    margin-bottom: 20px; 
+}
+
+.barra-superior{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.barra-superior .icon {
+    margin-right: 30px;
+    font-size: 25px;
+    position: relative; 
+}
+
+.barra-superior .icon:nth-child(2)::after {
+    content: ''; 
+    background-color: red; 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: 10%; 
+    left: 15px; 
+
+}
+
+header button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid #a19e9e;
+    background-color: transparent;
+}
+
+header button:first-child{
+    border: none;
+}
+
+header img{
+    width: 250px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+nav  div  p:first-child{
+    font-weight: bold;
+}
+
+nav > .icon{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+nav:nth-child(2)  ul{
+    list-style: none;
+    margin: 0 2%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+a{
+    color: #767272;
+    font-size: 15px;
+    font-family: Cambria;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main > div{
+    border-bottom: 1px solid #c0b7b7;
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    gap: 3%;
+}
+
+main nav{
+    margin-top: 30px;
+}
+
+nav a{
+    margin: 0 20px;
+}
+
+main div article{
+    margin-top: 20px;
+}
+
+article{
+    border-right: 1px solid #e9e8e8;
+
+}
+
+article:last-child{
+    border-right: none;
+}
+
+article:first-child img{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.etiqueta-fecha{
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.etiqueta-fecha span{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    padding: 7px 14px;
+    font-size: 14px;
+    margin-right: 2%;
+}
+
+article:first-child h2{
+    font-size: 36px;
+}
+
+.contenido p{
+    font-size: 1.1em;
+    color: #777272;
+    padding: 3% 0;
+}
+
+.continuar{
+    border-bottom: 1px solid #9b9595;
+    color: #a19c9c;
+    padding-bottom: 1%;
+    font-size: 16px;
+}
+
+.contenido h2{
+    font-size: 1.7em;
+    margin: 2% 0;
+}
+
+.contenido > h3{
+    margin-bottom: 4%;
+}
+
+article:nth-child(2) div:nth-child(4){
+    padding-top: 16px;
+    display: flex;
+}
+
+.punto{
+    font-size: 14px;
+    color: #726f6f;
+    padding: 1%;
+}
+
+.punto:first-child{
+    color: black;
+}
+
+.contenido:nth-child(3){
+    padding-top: 8%;  
+}
+
+.noticia-rapida img{
+    float: right;
+    width: 30%;
+}
+
+.noticia-rapida h3{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    float: left;
+    width: 70%;
+}
+
+.noticia-rapida p {
+    color: #616161;
+    font-size: 16px;
+    width: 70%;
+}
+
+article:last-child > div{
+    margin-bottom: 5%;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.snapshot {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; 
+}
+
+.snapshot p {
+    margin: 0;
+}
+
+section nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+section nav ul li {
+    margin-right: 20px; 
+}
+
+.market-overview {
+    margin-left: auto; 
+    color: #777272;
+}
+
+section nav > div > p {
+    margin: 0 10px; 
+}
