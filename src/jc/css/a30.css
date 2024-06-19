@@ -149,6 +149,7 @@ article:first-child img{
     font-size: 17px;
     align-items: center;
     margin: 3% 0;
+    font-weight: bold;
 }
 
 .etiqueta-fecha span{
