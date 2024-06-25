@@ -1,144 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>a17-sidebar</title>
-    <link rel="stylesheet" href="css/a17.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="css/a17.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
     <div class="barra-lateral">
-        <div class="icono-barra-lateral espaciado" id="logo">
-            <img src="https://pbs.twimg.com/profile_images/1084441300575944704/LUysWK-H_400x400.jpg" alt="Logo 1">
-            <div class="tooltip">
-                <div class="marca">
-                    <div class="marca-logo-container">
-                        <img src="https://cdn-icons-png.freepik.com/512/1828/1828814.png" alt="Mercedes" class="marca-logoanterior">
-                        <img src="https://e7.pngegg.com/pngimages/35/822/png-clipart-mercedes-benz-world-car-mercedes-benz-a-class-mercedes-benz-cla-class-mercedes-angle-emblem-thumbnail.png" alt="Mercedes" class="marca-logo">
-                        <div class="marca-texto">
-                            <div>Mercedes</div>
-                            <div>Team Plan • 4.5k members</div>
-                        </div>
-                    </div>
-                    <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
-                </div>
-                <div class="marca">
-                    <div class="marca-logo-container">
-                        <img src="https://cdn-icons-png.freepik.com/512/1828/1828814.png" alt="Mercedes" class="marca-logoanterior">
-                        <img src="https://img.freepik.com/fotos-premium/generar-logotipo-sitio-web-disenador_837074-11506.jpg" alt="Sandra" class="marca-logo">
-                        <div class="marca-texto">
-                            <div>Sandra</div>
-                            <div>Personal Plan • 1 member</div>
-                        </div>
-                    </div>
-                    <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
-                </div>
-                <div class="marca">
-                    <div class="marca-logo-container">
-                        <img src="https://cdn-icons-png.freepik.com/512/1828/1828814.png" alt="Mercedes" class="marca-logoanterior">
-                        <img src="https://pbs.twimg.com/profile_images/1084441300575944704/LUysWK-H_400x400.jpg" alt="Widelab" class="marca-logo">
-                        <div class="marca-texto">
-                            <div>Widelab</div>
-                            <div>Team Plan • 40 members</div>
-                        </div>
-                    </div>
-                    <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
-                </div>
-                <div class="marca">
-                    <div class="marca-logo-container">
-                        <img src="https://cdn-icons-png.freepik.com/512/1828/1828814.png" alt="Mercedes" class="marca-logoanterior">
-                        <img src="https://saasrank.es/wp-content/uploads/2020/08/Figma-Logo-v2.jpg" alt="Figma" class="marca-logo">
-                        <div class="marca-texto">
-                            <div>Figma</div>
-                            <div>Team Plan • 556 members</div>
-                        </div>
-                    </div>
-                    <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
-                </div>
+      <div class="icono-barra-lateral espaciado" id="logo">
+        <img
+          src="https://pbs.twimg.com/profile_images/1084441300575944704/LUysWK-H_400x400.jpg"
+          alt="Logo 1"
+        />
+        <div class="tooltip">
+          <div class="marca">
+            <div class="marca-logo-container">
+              <img
+                src="https://cdn-icons-png.freepik.com/512/1828/1828814.png"
+                alt="Mercedes"
+                class="marca-logoanterior"
+              />
+              <img
+                src="https://e7.pngegg.com/pngimages/35/822/png-clipart-mercedes-benz-world-car-mercedes-benz-a-class-mercedes-benz-cla-class-mercedes-angle-emblem-thumbnail.png"
+                alt="Mercedes"
+                class="marca-logo"
+              />
+              <div class="marca-texto">
+                <div>Mercedes</div>
+                <div>Team Plan • 4.5k members</div>
+              </div>
             </div>
-        </div>
-
-        <div class="icono-barra-lateral espaciado">
-            <ion-icon name="search-outline" class="cursor"></ion-icon>
-        </div>
-
-        <div class="icono-barra-lateral">
-            <ion-icon name="layers-outline" class="cursor"></ion-icon>
-        </div>
-        <div class="icono-barra-lateral">
-            <ion-icon name="notifications-outline" class="notification-icon cursor"></ion-icon>
-        </div>        
-        <div class="icono-barra-lateral espaciado">
-            <ion-icon name="calendar-clear-outline" class="cursor"></ion-icon>
-        </div>
-
-        <div class="icono-barra-lateral espaciado-reducido">
-            <ion-icon name="flash-outline" class="cursor"></ion-icon>
-        </div>
-        <div class="icono-barra-lateral espaciado">
-            <ion-icon name="layers-outline" class="cursor"></ion-icon>
-        </div>
-
-        <div class="icono-barra-lateral espaciado-reducido">
-            <img src="https://i.pinimg.com/474x/e0/62/9d/e0629d4e6bac58987e105b3cf7c5f35d.jpg" alt="Personal" class="reducido">
-        </div>
-        <div class="icono-barra-lateral espaciado-reducido">
-            <img src="https://i.pinimg.com/originals/97/02/5b/97025b8739c0a26c1e3449a0b69cf08a.jpg" alt="Business" class="reducido">
-        </div>
-        <div class="icono-barra-lateral espaciado-reducido">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjqA1IcrgO3N6MHFj9Wf0mtSFd4TdIJik-g&s" alt="Travel" class="reducido">
-        </div>
-        <div class="icono-barra-lateral espaciado">
-            <ion-icon name="add-circle-outline" class="reducido cursor"></ion-icon>
-        </div>
-
-        <div class="icono-barra-lateral espaciado-reducido">
-            <ion-icon name="settings-outline" class="cursor"></ion-icon>
-        </div>
-
-        <div class="icono-barra-lateral espaciado">
-            <ion-icon name="aperture-outline" class="cursor"></ion-icon>
-        </div>
-
-        <div class="icono-barra-lateral espaciado" id="perfil">
-            <img src="https://i.pinimg.com/736x/90/08/8f/90088f0e6b5bb90c380725dcf854b41c.jpg" alt="Perfil">
-            <div class="tooltip">
-                <div class="tooltip-header">
-                    <img src="https://i.pinimg.com/736x/90/08/8f/90088f0e6b5bb90c380725dcf854b41c.jpg" alt="Perfil">
-                    <div>
-                        <div class="name">Sandra Marx</div>
-                        <div class="email">sandra@gmail.com</div>
-                    </div>
-                </div>
-                <div class="tooltip-content">
-                    <div>
-                        <ion-icon name="folder-outline"></ion-icon>
-                        <div>Integrations</div>
-                    </div>
-                    <div>
-                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
-                        <div>History</div>
-                    </div>
-                    <div>
-                        <ion-icon name="star-outline" class="highlight-yellow"></ion-icon>
-                        <div>Upgrade to pro</div>
-                    </div>
-                    <div class="highlight-green">
-                        <ion-icon name="radio-button-on-outline"></ion-icon>
-                        <div>Update App</div>
-                    </div>
-                    <div>
-                        <ion-icon name="log-out-outline"></ion-icon>
-                        <div>Logout</div>
-                    </div>
-                </div>
-                <div class="tooltip-footer">
-                    v1.5.69 • Terms & Conditions
-                </div>
+            <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
+          </div>
+          <div class="marca">
+            <div class="marca-logo-container">
+              <img
+                src="https://cdn-icons-png.freepik.com/512/1828/1828814.png"
+                alt="Mercedes"
+                class="marca-logoanterior"
+              />
+              <img
+                src="https://img.freepik.com/fotos-premium/generar-logotipo-sitio-web-disenador_837074-11506.jpg"
+                alt="Sandra"
+                class="marca-logo"
+              />
+              <div class="marca-texto">
+                <div>Sandra</div>
+                <div>Personal Plan • 1 member</div>
+              </div>
             </div>
+            <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
+          </div>
+          <div class="marca">
+            <div class="marca-logo-container">
+              <img
+                src="https://cdn-icons-png.freepik.com/512/1828/1828814.png"
+                alt="Mercedes"
+                class="marca-logoanterior"
+              />
+              <img
+                src="https://pbs.twimg.com/profile_images/1084441300575944704/LUysWK-H_400x400.jpg"
+                alt="Widelab"
+                class="marca-logo"
+              />
+              <div class="marca-texto">
+                <div>Widelab</div>
+                <div>Team Plan • 40 members</div>
+              </div>
+            </div>
+            <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
+          </div>
+          <div class="marca">
+            <div class="marca-logo-container">
+              <img
+                src="https://cdn-icons-png.freepik.com/512/1828/1828814.png"
+                alt="Mercedes"
+                class="marca-logoanterior"
+              />
+              <img
+                src="https://saasrank.es/wp-content/uploads/2020/08/Figma-Logo-v2.jpg"
+                alt="Figma"
+                class="marca-logo"
+              />
+              <div class="marca-texto">
+                <div>Figma</div>
+                <div>Team Plan • 556 members</div>
+              </div>
+            </div>
+            <ion-icon name="checkmark-outline" class="marca-check"></ion-icon>
+          </div>
         </div>
+      </div>
+
+      <div class="icono-barra-lateral espaciado">
+        <img
+          src="https://i.imgur.com/12WQelT.png"
+          class="iconos"
+          title="search"
+        />
+      </div>
+
+      <div class="icono-barra-lateral">
+        <img
+          src="https://i.imgur.com/DalX5ix.png"
+          class="iconos"
+          title="Imbox"
+        />
+      </div>
+      <div class="icono-barra-lateral">
+        <img
+          src="https://i.imgur.com/x4RLyJh.png"
+          class="iconos"
+          title="Activity"
+        />
+        <div class="punto-rojo">●</div>
+      </div>
+
+      <div class="icono-barra-lateral espaciado">
+        <img
+          src="https://i.imgur.com/2wZlWN0.png"
+          class="iconos"
+          title="Schedule"
+        />
+      </div>
+
+      <div class="icono-barra-lateral espaciado-reducido">
+        <img
+          src="https://i.imgur.com/0kRrerc.png"
+          class="iconos"
+          title="Boots"
+        />
+      </div>
+      <div class="icono-barra-lateral espaciado">
+        <img
+          src="https://i.imgur.com/DalX5ix.png"
+          class="iconos"
+          title="Documents"
+        />
+      </div>
+
+      <div class="icono-barra-lateral espaciado-reducido">
+        <img
+          src="https://i.pinimg.com/474x/e0/62/9d/e0629d4e6bac58987e105b3cf7c5f35d.jpg"
+          alt="Personal"
+          class="reducido"
+        />
+      </div>
+      <div class="icono-barra-lateral espaciado-reducido">
+        <img
+          src="https://i.pinimg.com/originals/97/02/5b/97025b8739c0a26c1e3449a0b69cf08a.jpg"
+          alt="Business"
+          class="reducido"
+        />
+      </div>
+      <div class="icono-barra-lateral espaciado-reducido">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjqA1IcrgO3N6MHFj9Wf0mtSFd4TdIJik-g&s"
+          alt="Travel"
+          class="reducido"
+        />
+      </div>
+      <div class="icono-barra-lateral espaciado">
+        <img
+          src="https://i.imgur.com/cMpCCHp.png"
+          class="iconos"
+          title="Add New Project"
+        />
+      </div>
+
+      <div class="icono-barra-lateral espaciado-reducido">
+        <img
+          src="https://i.imgur.com/N0Wo48R.png"
+          class="iconos"
+          title="Settings"
+        />
+      </div>
+
+      <div class="icono-barra-lateral espaciado">
+        <img
+          src="https://i.imgur.com/fthtTqY.png"
+          class="iconos"
+          title="Help"
+        />
+      </div>
+
+      <div class="icono-barra-lateral espaciado" id="perfil">
+        <img
+          src="https://i.pinimg.com/736x/90/08/8f/90088f0e6b5bb90c380725dcf854b41c.jpg"
+          alt="Perfil"
+        />
+        <div class="tooltip">
+          <div class="tooltip-header">
+            <img
+              src="https://i.pinimg.com/736x/90/08/8f/90088f0e6b5bb90c380725dcf854b41c.jpg"
+              alt="Perfil"
+            />
+            <div>
+              <div class="name">Sandra Marx</div>
+              <div class="email">sandra@gmail.com</div>
+            </div>
+          </div>
+          <div class="tooltip-content">
+            <div>
+              <ion-icon name="folder-outline"></ion-icon>
+              <div>Integrations</div>
+            </div>
+            <div>
+              <ion-icon name="chevron-down-circle-outline"></ion-icon>
+              <div>History</div>
+            </div>
+            <div>
+              <ion-icon name="star-outline" class="highlight-yellow"></ion-icon>
+              <div>Upgrade to pro</div>
+            </div>
+            <div class="highlight-green">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+              <div>Update App</div>
+            </div>
+            <div>
+              <ion-icon name="log-out-outline"></ion-icon>
+              <div>Logout</div>
+            </div>
+          </div>
+          <div class="tooltip-footer">v1.5.69 • Terms & Conditions</div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

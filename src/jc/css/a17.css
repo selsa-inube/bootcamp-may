@@ -1,267 +1,267 @@
 body {
-    height: 200vh;
-    margin: 0;
-    font-family: Arial;
-    background-color: #E2E0D4;
+  height: 200vh; /* Solo para simular un contenido largo */
+  margin: 0;
+  font-family: Arial;
+  background-color: #e2e0d4;
 }
 
 .barra-lateral {
-    position: fixed;
-    top: 10px; 
-    bottom: 10px; 
-    left: 10px;
-    width: 5%;
-    height: calc(100vh - 42px);
-    background-color: #fff;
-    box-shadow: 5px 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-    border: 5px;
-    border-radius: 10px 10px;
-    justify-content: space-between;
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  width: 70px; /* Ancho fijo en píxeles */
+  height: calc(
+    100vh - 40px
+  ); /* Altura fija menos el espacio superior e inferior */
+  background-color: #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px;
 }
 
 .icono-barra-lateral {
-    position: relative;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-.icono-barra-lateral .notification-icon {
-    position: relative;
+  position: relative;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.icono-barra-lateral .notification-icon::after {
-    content: '●';
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    color: red;
-    font-size: 20px; 
-    line-height: 1;
-    margin-top: 35px;
+.punto-rojo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: red;
+  font-size: 20px;
+  top: 5px;
 }
 
 .icono-barra-lateral img {
-    width: 5vh;
-    height: 5vh;
-    border: 5px;
-    border-radius: 10px; 
-    display: block;
+  width: 5vh;
+  height: 5vh;
+  border: 5px;
+  border-radius: 10px;
+  display: block;
+}
+
+.icono-barra-lateral .iconos {
+  width: 3.7vh;
+  height: 3.7vh;
+  opacity: 0.5;
 }
 
 .icono-barra-lateral ion-icon {
-    width: 3.7vh;
-    height: 3.7vh;
-    opacity: 0.5;
+  width: 3.7vh;
+  height: 3.7vh;
+  opacity: 0.5;
 }
 
 .icono-barra-lateral .reducido img {
-    width: 70%;
-    height: 70%px;
-    margin-bottom: 5px; 
-}
-.icono-barra-lateral .reducido ion-icon {
-    width: 70%;
-    height: 70%;
-    margin-bottom: 5px; 
+  width: 70%;
+  height: 70%px;
+  margin-bottom: 10px;
 }
 .icono-barra-lateral .reducido {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 5px;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
 }
 
 .espaciado {
-    margin-bottom: 30px; 
+  margin-bottom: 32px;
 }
 
 .espaciado-reducido {
-    margin-bottom: 7px; 
+  margin-bottom: 12px;
 }
 
 .tooltip {
-    display: block;
-    position: fixed;
-    left: 100px;
-    top: 10px;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-    border: 0.3px;
-    border-radius: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  display: block;
+  position: absolute;
+  left: 65px;
+  top: 10px;
+  transform: translateY(-19px);
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border: 0.3px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
 }
 
 .icono-barra-lateral:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .icono-barra-lateral .tooltip {
-    opacity: 0;
-    visibility: hidden;
-    transition-delay: 0.5s; 
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0.5s;
 }
 
 .icono-barra-lateral:hover .tooltip {
-    display: block;
+  display: block;
 }
 
 #logo .tooltip {
-    width: 250px;
+  width: 250px;
 }
 
 #logo .tooltip .marca {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #logo .tooltip .marca-logo-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #logo .tooltip .marca:hover {
-    background-color: #A7BAE1;
+  background-color: #a7bae1;
 }
 
 #logo .tooltip .marca:hover .marca-check {
-    display: flex;
+  display: flex;
 }
 
 #logo .tooltip .marca-logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
 }
 
 #logo .tooltip .marca-texto {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #logo .tooltip .marca-texto div:last-child {
-    font-size: 12px; 
-    color: #888;
+  font-size: 12px;
+  color: #888;
 }
 
 #logo .tooltip .marca-logoanterior {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  opacity: 0.5;
 }
 
 .marca-check {
-    display: none;
+  display: none;
 }
 
 #perfil .tooltip {
-    width: 180px;
-    top: unset; 
-    bottom: 10px; 
-    left: 100px; 
+  width: 180px;
+  top: unset;
+  bottom: 1px;
+  transform: translateY(5px);
+  left: 65px;
 }
 
 #perfil .tooltip img {
-    width: 40px;
-    height: 40px;
-    border-radius: 30%;
-    margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  margin-right: 10px;
 }
 
 #perfil .tooltip-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 #perfil .tooltip .tooltip-header div {
-    display: block;
-    flex-direction: column;
+  display: block;
+  flex-direction: column;
 }
 
 #perfil .tooltip .tooltip-header div .name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #perfil .tooltip .tooltip-header div .email {
-    font-size: 12px;
-    color: #888;
+  font-size: 12px;
+  color: #888;
 }
 
 #perfil .tooltip .tooltip-content div {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #perfil .tooltip .tooltip-content div:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #perfil .tooltip .tooltip-footer {
-    font-size: 12px;
-    color: #888;
-    text-align: center;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
 }
 .tooltip-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tooltip-content div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .tooltip-content div:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .tooltip-content ion-icon {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .tooltip-content .highlight-green {
-    color: green;
+  color: green;
 }
 
-.cursor:hover {
-    cursor: pointer;
-    background-color: #A7BAE1;
-    height: 25px;
-    width: 25px;
-    border-radius: 5px;
+.iconos:hover {
+  cursor: pointer;
+  background-color: #a7bae1;
+  border-radius: 5px;
 }
 
 .marca ion-icon {
-    display: none;
+  display: none;
 }
 
 .marca:hover .marca-check {
-    display: block;
+  display: block;
 }
 
-.tooltip-header, .tooltip-content div {
-    position: relative;
-    padding: 5px;
-    border-radius: 5px;
+.tooltip-header,
+.tooltip-content div {
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.tooltip-header:hover, .tooltip-content div:hover {
-    background-color: #a9e7cb;
+.tooltip-header:hover,
+.tooltip-content div:hover {
+  background-color: #a9e7cb;
 }
 
-.highlight-yellow{
-    color: #d5bb0d;
+.highlight-yellow {
+  color: #d5bb0d;
 }
