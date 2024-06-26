@@ -1,143 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A18: Calendar</title>
-    <link rel="stylesheet" href="css/a18.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="css/a18.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
     <main class="contenedor">
-        <div class="hora"><a class="enlace"><span class="icono">&lt;</span></a></div>
-        <div class="dia"><ul class="lista">
-            <li>Sep</li>
-            <li class="numero-dia">19</li>
-            <li>MON</li>
-        </ul></div>
-        <div class="dia"><ul class="lista">
-            <li>Sep</li>
-            <li class="numero-dia">20</li>
-            <li>TUE</li>
-        </ul></div>
-        <div class="dia"><ul class="lista">
-            <li>Sep</li>
-            <li class="numero-dia">21</li>
-            <li>WEB</li>
-        </ul></div>
-        <div class="dia"><ul class="lista">
-            <li>Sep</li>
-            <li class="numero-dia">22</li>
-            <li>THU</li>
-        </ul></div>
-        <div class="dia"><ul class="lista">
-            <li>Sep</li>
-            <li class="numero-dia">23</li>
-            <li>FRI</li>
-        </ul></div>
-        <div class="dia"><ul class="lista">
-            <li>Sep</li>
-            <li class="numero-dia">24</li>
-            <li>SAT</li>
-        </ul></div>
-        <div class="dia"><ul class="lista">
-            <li>Sep</li>
-            <li class="numero-dia">25</li>
-            <li>SUN</li>
-        </ul></div>
-        <div class="hora"><a href="" class="enlace"><span class="icono">&gt;</span></a></div>
-        
-        <div class="hora">
-            <p>7 AM</p>
-        </div>
-        <div class="celda">
-            <div class="contenido">
-                <img src="https://i.pinimg.com/originals/61/8a/89/618a892b85e01238fd709d7d483893c4.png" alt="" class="imagen">
-                <ion-icon name="checkmark-outline" class="icono-derecho"></ion-icon>
-                <p>7:30 AM</p>
-                <h3>Meeting with Sam</h3>
-            </div>
-        </div>
-        <div class="celda"><div class="contenido">
-            <img src="https://i.pinimg.com/originals/61/8a/89/618a892b85e01238fd709d7d483893c4.png" alt="" class="imagen">
-            <ion-icon name="checkmark-outline" class="icono-derecho"></ion-icon>
-            <p>8:40 AM</p>
-            <h3>Meeting with Sam</h3>
-        </div></div>
-        <div class="celda"></div>
-        <div class="celda"><div class="contenido">
-            <img src="https://img1.picmix.com/output/stamp/normal/3/0/8/1/2271803_6638a.png" alt="" class="imagen">
-            <ion-icon name="ellipsis-horizontal-outline" class="icono-derecho ion2"></ion-icon>
-            <p>6:30 AM</p>
-            <h3 class="p2">Meeting with Sam</h3>
-        </div></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"><div class="contenido">
-            <img src="https://img1.picmix.com/output/stamp/normal/3/0/8/1/2271803_6638a.png" alt="" class="imagen">
-            <ion-icon name="ellipsis-horizontal-outline" class="icono-derecho ion2"></ion-icon>
-            <p>6:30 AM</p>
-            <h3 class="p2">Meeting with Sam</h3>
-        </div></div>
-        <div class="celda2"></div>
+      <div class="hora">
+        <a class="enlace"><span class="icono">&lt;</span></a>
+      </div>
+      <div class="dia">
+        <ul class="lista">
+          <li>Sep</li>
+          <li class="numero-dia">19</li>
+          <li>MON</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <ul class="lista">
+          <li>Sep</li>
+          <li class="numero-dia">20</li>
+          <li>TUE</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <ul class="lista">
+          <li>Sep</li>
+          <li class="numero-dia">21</li>
+          <li>WEB</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <ul class="lista">
+          <li>Sep</li>
+          <li class="numero-dia">22</li>
+          <li>THU</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <ul class="lista">
+          <li>Sep</li>
+          <li class="numero-dia">23</li>
+          <li>FRI</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <ul class="lista">
+          <li>Sep</li>
+          <li class="numero-dia">24</li>
+          <li>SAT</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <ul class="lista">
+          <li>Sep</li>
+          <li class="numero-dia">25</li>
+          <li>SUN</li>
+        </ul>
+      </div>
+      <div class="hora">
+        <a href="" class="enlace"><span class="icono">&gt;</span></a>
+      </div>
 
-        <div class="hora">
-            <P>8 AM</P>
+      <div class="hora">
+        <p>7 AM</p>
+      </div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://i.pinimg.com/originals/61/8a/89/618a892b85e01238fd709d7d483893c4.png"
+            class="imagen"
+          />
+          <ion-icon name="checkmark-outline" class="icono-derecho"></ion-icon>
+          <p>7:30 AM</p>
+          <h3>Meeting with Sam</h3>
         </div>
-
-        <div class="celda"></div>
-        <div class="celda"><div class="contenido">
-            <img src="https://i.pinimg.com/originals/61/8a/89/618a892b85e01238fd709d7d483893c4.png" alt="" class="imagen">
-            <ion-icon name="ellipsis-horizontal-outline" class="icono-derecho ion2"></ion-icon>
-            <p>7:30 AM</p>
-            <h3 class="p3">Meeting with Sam</h3>
-        </div></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"><div class="contenido">
-            <img src="https://i.pinimg.com/originals/14/a3/49/14a3497e7f1ce280db38eed0400047c0.png" alt="" class="imagen">
-            <ion-icon name="ellipsis-horizontal-outline" class="icono-derecho ion2"></ion-icon>
-            <p>6:30 AM</p>
-            <h3 class="p4">Meeting with Sam</h3>
-        </div></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda2"></div>
-
-        <div class="hora">
-            <p>9 AM</p>
+      </div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://i.pinimg.com/originals/61/8a/89/618a892b85e01238fd709d7d483893c4.png"
+            class="imagen"
+          />
+          <ion-icon name="checkmark-outline" class="icono-derecho"></ion-icon>
+          <p>8:40 AM</p>
+          <h3>Meeting with Sam</h3>
         </div>
-
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"><div class="contenido">
-            <img src="https://i.pinimg.com/originals/14/a3/49/14a3497e7f1ce280db38eed0400047c0.png" alt="" class="imagen">
-            <p>6:30 AM</p>
-            <h3>Meeting with Sam</h3>
-        </div></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda2"></div>
-
-        <div class="hora">
-            <P>10 AM</P>
+      </div>
+      <div class="celda"></div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://img1.picmix.com/output/stamp/normal/3/0/8/1/2271803_6638a.png"
+            class="imagen"
+          />
+          <ion-icon
+            name="ellipsis-horizontal-outline"
+            class="icono-derecho ion2"
+          ></ion-icon>
+          <p>6:30 AM</p>
+          <h3 class="p2">Meeting with Sam</h3>
         </div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda"><div class="contenido">
-            <img src="https://i.pinimg.com/originals/14/a3/49/14a3497e7f1ce280db38eed0400047c0.png" alt="" class="imagen">
-            <ion-icon name="ellipsis-horizontal-outline" class="icono-derecho ion2"></ion-icon>
-            <p>6:30 AM</p>
-            <h3 class="p5">Meeting with Sam</h3>
-        </div></div>
-        <div class="celda"></div>
-        <div class="celda2"></div>
-    </main> 
-</body>
+      </div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://img1.picmix.com/output/stamp/normal/3/0/8/1/2271803_6638a.png"
+            class="imagen"
+          />
+          <ion-icon
+            name="ellipsis-horizontal-outline"
+            class="icono-derecho ion2"
+          ></ion-icon>
+          <p>6:30 AM</p>
+          <h3 class="p2">Meeting with Sam</h3>
+        </div>
+      </div>
+      <div class="celda2"></div>
+
+      <div class="hora">
+        <p>8 AM</p>
+      </div>
+
+      <div class="celda"></div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://i.pinimg.com/originals/61/8a/89/618a892b85e01238fd709d7d483893c4.png"
+            alt=""
+            class="imagen"
+          />
+          <ion-icon
+            name="ellipsis-horizontal-outline"
+            class="icono-derecho ion2"
+          ></ion-icon>
+          <p>7:30 AM</p>
+          <h3 class="p3">Meeting with Sam</h3>
+        </div>
+      </div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://i.pinimg.com/originals/14/a3/49/14a3497e7f1ce280db38eed0400047c0.png"
+            alt=""
+            class="imagen"
+          />
+          <ion-icon
+            name="ellipsis-horizontal-outline"
+            class="icono-derecho ion2"
+          ></ion-icon>
+          <p>6:30 AM</p>
+          <h3 class="p4">Meeting with Sam</h3>
+        </div>
+      </div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda2"></div>
+
+      <div class="hora">
+        <p>9 AM</p>
+      </div>
+
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://i.pinimg.com/originals/14/a3/49/14a3497e7f1ce280db38eed0400047c0.png"
+            alt=""
+            class="imagen"
+          />
+          <p>6:30 AM</p>
+          <h3>Meeting with Sam</h3>
+        </div>
+      </div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda2"></div>
+
+      <div class="hora">
+        <p>10 AM</p>
+      </div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda"></div>
+      <div class="celda">
+        <div class="contenido">
+          <img
+            src="https://i.pinimg.com/originals/14/a3/49/14a3497e7f1ce280db38eed0400047c0.png"
+            alt=""
+            class="imagen"
+          />
+          <ion-icon
+            name="ellipsis-horizontal-outline"
+            class="icono-derecho ion2"
+          ></ion-icon>
+          <p>6:30 AM</p>
+          <h3 class="p5">Meeting with Sam</h3>
+        </div>
+      </div>
+      <div class="celda"></div>
+      <div class="celda2"></div>
+    </main>
+  </body>
 </html>
