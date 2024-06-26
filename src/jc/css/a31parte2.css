@@ -1,0 +1,287 @@
+body {
+  background: linear-gradient(to bottom right, #4558ea, #3da1e3);
+  height: 150vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  height: 920px;
+  width: 500px;
+  border-radius: 60px;
+  background-color: #000918;
+  text-align: center;
+}
+
+.caja-principal {
+  justify-content: center;
+  color: white;
+  border-radius: 60px;
+  background: linear-gradient(to bottom right, #26adfd, #1069f4);
+  position: relative;
+  box-shadow: 0px 9px 9px 0px #5495f0;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 700px;
+  width: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.icono-widget {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  left: 45px;
+  margin-top: 25px;
+  margin-right: 5px;
+  align-self: flex-start;
+}
+
+.icono-mapa {
+  color: white;
+  margin-top: 38px;
+  font-size: 35px;
+  align-self: flex-start;
+}
+
+.icono-opciones {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  margin-top: 30px;
+  margin-right: 5px;
+  align-self: flex-start;
+}
+
+.titulo {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  font-size: 48px;
+  align-self: flex-start;
+}
+
+.actualizando {
+  color: white;
+  top: 100px;
+  text-align: center;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 20px;
+  width: 28%;
+  height: 28px;
+  font-family: Tahoma;
+}
+
+.actualizando::before {
+  content: "●";
+  color: #c7fc78;
+  margin-right: 5px;
+  margin-top: -20px;
+}
+
+.imagen-clima {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 350px;
+}
+
+.temperatura {
+  position: absolute;
+  font-family: sans-serif;
+  margin-top: 22rem;
+  font-size: 150px;
+}
+
+.temperatura::after {
+  content: "°";
+  display: block;
+  font-size: 40px;
+  color: #9b9b9b;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.estado-clima {
+  position: absolute;
+  font-family: "Noto Sans", sans-serif;
+  margin-top: 25.5rem;
+  font-size: 30px;
+}
+
+.fecha {
+  position: absolute;
+  font-family:Tahoma;
+  margin-top: 470px;
+  font-size: 15px;
+  color: #cfcfcf;
+  font-weight: bold;
+}
+
+.linea-divisora {
+  position: absolute;
+  margin-top: 30rem;
+  width: 400px;
+  border-color: #6aa7f1;
+}
+
+.icono-viento {
+  font-size: 28px;
+  position: absolute;
+  left: 45px;
+  margin-top: 25px;
+  margin-left: 50px;
+  align-self: flex-end;
+  margin-bottom: 75px;
+}
+
+.icono-humedad {
+  position: absolute;
+  color: white;
+  margin-top: 25px;
+  font-size: 32px;
+  align-self: flex-end;
+  margin-bottom: 70px;
+}
+
+.icono-lluvia {
+  font-size: 26px;
+  position: absolute;
+  right: 25px;
+  margin-right: 50px;
+  align-self: flex-end;
+  margin-bottom: 75px;
+}
+
+.velocidad-viento {
+  position: absolute;
+  font-size: 15px;
+  align-self: flex-end;
+  margin-right: 270px;
+  margin-bottom: 50px;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.descripcion-viento {
+  font-family: Tahoma;
+  position: absolute;
+  color: #c6c0c0;
+  font-size: 15px;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-right: 270px;
+  margin-bottom: 30px;
+}
+
+.nivel-humedad {
+  position: absolute;
+  font-size: 15px;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.descripcion-humedad {
+  font-family: Tahoma;
+  position: absolute;
+  color: #c6c0c0;
+  font-weight: bold;
+  font-size: 15px;
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.probabilidad-lluvia {
+  position: absolute;
+  font-size: 15px;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.descripcion-lluvia {
+  font-family: Tahoma;
+  position: absolute;
+  color: #c6c0c0;
+  font-weight: bold;
+  font-size: 15px;
+  align-self: flex-end;
+  margin-bottom: 30px;
+  margin-left: 300px;
+}
+
+.titulo-hoy {
+  font-family: Tahoma;
+  color: white;
+  margin-right: 320px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+
+.enlace-pronostico {
+  color: #656f7a;
+  margin-top: -40px;
+  position: absolute;
+  margin-left: 150px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.enlace-pronostico:hover {
+  color: white;
+}
+
+.contenedor-paneles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.panel {
+  width: 60px;
+  height: 90px;
+  background-color: transparent;
+  border: 1px solid #4a5b71;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: Tahoma;
+  font-size: 15px;
+}
+.panel:hover {
+  background: linear-gradient(to bottom right, #1069f4, #26adfd);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.panel img {
+  display: block;
+  margin-bottom: 5px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
