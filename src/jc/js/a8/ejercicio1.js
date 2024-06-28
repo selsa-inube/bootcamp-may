@@ -16,7 +16,6 @@ function reliableMultiply(a, b) {
       if (!(error instanceof MultiplicatorUnitFailure)) {
         throw error;
       }
-      // Retry if the error is of type MultiplicatorUnitFailure
     }
   }
 }
