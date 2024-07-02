@@ -92,20 +92,20 @@
 
 }
 
-.body-card .dates-text span {
+.body-card .dates-text p {
     display: block;
     font-size: 15px;
     color: #c1c3c8;
     font-weight: 600;
     margin-bottom: 3px;
-
+    text-align: center;
 
 }
 
 .body-card .dates-text .date-number {
     font-size: 2em;
     color: black;
-
+    text-align: center;
 }
 
 .hours {
@@ -145,10 +145,10 @@
 }
 
 .card-todo{
-    background-color: #9c9ea0;
     padding: 10px;
     border-radius: 15px;
     margin: 10px;
+    width: 100%;
 }
 
 .card-todo .card img:nth-child(1) {
@@ -196,4 +196,49 @@
 
 .calendar-body .card-veinte-tres-once{
     grid-area: 6 / 6 / 11 / 7;
+}
+
+.white {
+    background-color: #f6f8fa;
+}
+
+.blue {
+    background-color: #e4eef8;
+}
+
+.blue p{
+    color: #75afe1;
+}
+
+.green-light {
+    background-color: #ecf5f4;
+}
+.green-light p{
+    color: #a7dad9;
+}
+
+.orange{
+    background-color: #fcf0e4;
+}
+
+.orange p{
+    color: #edb775;
+}
+
+.green {
+    background-color: #ecf5e7;
+}
+
+.green p{
+    color: #7fb463;
+}
+
+.card-todo p{
+    margin: 7px 0px;
+    font-weight: bold;
+}
+
+.card-img{
+    display: flex;
+    justify-content: space-between;
 }
