@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 250vh;
+    background-color: #e0e0e0;
+}
+
+#menu {
+    background-color: #ffffff;
+    width: 75px;
+    height: 98vh;
+    border: 3px solid #f3eded;
+    border-radius: 10px;
+    position: fixed;
+    display: grid;
+    align-content: space-between;
+    justify-items: center;
+    padding: 20px 5px;
+    margin: 5px;
+}
+
+#logo {
+    border-radius: 3px;
+}
+
+#logo img,
+.perfil-config .img-perfil {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.img-menu {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    filter: grayscale(50%) opacity(50%);
+}
+
+.perfil-config {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-config .perfil {
+    border: 3px solid #e9e7e8;
+    margin-top: 30px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 3px;
+}
+
+
+div .square {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: auto;
+}
+
+div .square-green {
+    background-color: #aee9dc;
+    border-color: #aed2ca;
+}
+
+div .square-lila {
+    background-color: #b4bddc;
+    border-color: #aab1ce;
+}
+
+div .square-pink {
+    background-color: #e2c8f5;
+    border-color: #c9b0da;
+}
+
+div .square-plus {
+    display: flex;
+    border-color: #dcdbdb;
+    justify-content: center;
+    color: #ccc9c9;
+}
+
+
+.menu-options {
+    height: 70vh;
+}
+
+.menu-options div {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.search {
+    margin: 20px 0px;
+}
+
+.perfil-config .option {
+    margin: auto;
+    padding-top: 20px;
+}
+
+.options-color li {
+    padding: 0px;
+}
+
+.submenu {
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    background-color: #ffffff;
+    display: grid;
+    width: 250px;
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#menu #logo:hover .submenu-container,
+#menu .perfil-config:hover .config-perfil-container {
+    display: block;
+}
+
+.submenu-container,
+.config-perfil-container {
+    display: none;
+}
+
+.submenu .nav-submenu-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px 10px;
+
+}
+
+.submenu .nav-submenu-content:hover {
+    background-color: #f3f1ff;
+    cursor: pointer;
+    border: 1px solid #f3f1ff;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+h4,
+span {
+    font-size: 0.8rem;
+    color: #808080;
+}
+
+div .letter {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    border-radius: 7px;
+    border: 2px solid;
+    display: flex;
+    border-color: #dcdbdb;
+    justify-content: center;
+    align-items: center;
+    color: #ccc9c9;
+}
+
+div .config-perfil {
+    position: absolute;
+    left: 100%;
+    bottom: 0%;
+    background-color: #ffffff;
+    display: grid;
+    width: 250px;
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.config-perfil .contenedor {
+    display: flex;
+    margin: 10px 10px;
+}
+
+.config-perfil div img {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+div .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    background-color: #7ec67e;
+    display: inline-block;
+    margin: auto 4px auto 4px;
+}
+
+.config-perfil-name {
+    margin-left: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: #eae8e8fc;
+    border: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.config-perfil-container span {
+    font-size: 14px;
+}
+
+.nav-submenu-list2 img {
+    filter: grayscale(50%) opacity(50%);
+}
+
+.nav-submenu-list2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-submenu-list2 span {
+    margin-left: 10px;
+}
+
+
+.menu-options li:hover {
+    background-color: #f4f7fa;
+    cursor: pointer;
+    border: 1px solid #e3e4e6;
+    border-radius: 5px;
+}
