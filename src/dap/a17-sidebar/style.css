@@ -10,9 +10,8 @@ body {
     background-color: #e0e0e0;
 }
 
-.menu {
+#menu {
     background-color: #ffffff;
-    /* Temporal */
     width: 75px;
     height: 98vh;
     border: 3px solid #f3eded;
@@ -25,11 +24,11 @@ body {
     margin: 5px;
 }
 
-.logo {
+#logo {
     border-radius: 3px;
 }
 
-.logo img,
+#logo img,
 .perfil-config .img-perfil {
     width: 32px;
     height: 32px;
@@ -44,12 +43,11 @@ body {
 }
 
 .perfil-config {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .perfil-config .perfil {
-    width: 100%;
     border: 3px solid #e9e7e8;
     margin-top: 30px;
     padding: 4px;
@@ -68,8 +66,6 @@ div .square {
     border-radius: 5px;
     border: 2px solid;
     margin: auto;
-    /* margin-bottom: 5px;
-    margin-top: 5px; */
 }
 
 div .square-green {
@@ -96,7 +92,7 @@ div .square-plus {
 
 
 .menu-options {
-    height: 75vh;
+    height: 70vh;
 }
 
 .menu-options div {
@@ -109,7 +105,8 @@ div .square-plus {
 }
 
 .perfil-config .option {
-    margin-top: 8px;
+    margin: auto;
+    padding-top: 20px;
 }
 
 .options-color li {
@@ -128,15 +125,14 @@ div .square-plus {
     border-radius: 10px;
 }
 
-.menu .logo:hover .submenu-container,
-.menu .perfil-config:hover .config-perfil-container {
+#menu #logo:hover .submenu-container,
+#menu .perfil-config:hover .config-perfil-container {
     display: block;
 }
 
 .submenu-container,
 .config-perfil-container {
     display: none;
-
 }
 
 .submenu .nav-submenu-content {
@@ -145,6 +141,13 @@ div .square-plus {
     gap: 5px;
     margin: 10px 10px;
 
+}
+
+.submenu .nav-submenu-content:hover {
+    background-color: #f3f1ff;
+    cursor: pointer;
+    border: 1px solid #f3f1ff;
+    border-radius: 5px;
 }
 
 h3 {
