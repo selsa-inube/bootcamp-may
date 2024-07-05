@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trail { 
+          position: absolute;
+          height: 8px; width: 8px;
+          border-radius: 4px;
+          background: red;
+        }
+        body {
+          height: 300px;
+        }
+      </style>
+</head>
+
+<body>
+<script>
+  let dots = [];
+  for (let i = 0; i < 10; i++) {
+    let node = document.createElement("div");
+    node.className = "trail";
+    document.body.appendChild(node);
+    dots.push(node);
+  }
+  let currentDot = 0;
+  
+  window.addEventListener("mousemove", event => {
+    let dot = dots[currentDot];
+    dot.style.left = (event.pageX - 5) + "px";
+    dot.style.top = (event.pageY - 5) + "px";
+    currentDot = (currentDot + 4) % dots.length;
+  });
+</script>
+</body>
+</html>
