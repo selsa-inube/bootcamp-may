@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 >Mountains</h1>
+
+<div id= "mountains" ></div>
+
+<script>
+   const  mountains = [
+    { name : "Kilimanjaro" , height : 5895 , place : "Tanzania" },
+    { name : "Everest" , height : 8848 , place : "Nepal" },
+    { name : "Monte Fuji" , height : 3776 , place : "Japón" },
+    { name : "Vaalserberg" , height : 323 , place : "Países Bajos" },
+    { name : "Denali" , height : 6168 , place : "Estados Unidos" },
+    { name : "Popocatépetl" , height : 5465 , place : "México" },
+    { name : "Mont Blanc" , height : 4808 , place : "Italia/Francia" }
+  ];
+
+  function createtable(data){
+    let table = document.createElement('table');
+    let keys = Object.keys(data[0]);
+    let tr = document.createElement('tr');
+
+    keys.forEach(function (key){
+        let th = document.createElement('th');
+        th.appendChild(document.createTextNode(key));
+        tr.appendChild(th);
+    });
+
+    table.appendChild(tr);
+
+    data.forEach(function (Object){
+        let row = document.createElement('tr');
+        keys.forEach(function(key){
+            let cell = document.createElement('td');
+            cell.appendChild(document.createTextNode(Object[key]));
+            if (typeof Object[key] == "number"){
+                cell.style.textAlign = "right";
+            }
+        
+            row.appendChild(cell);
+        });
+        table.appendChild(row);
+    });
+
+    return table;
+  }
+
+  document.querySelector("#mountains").appendChild(createtable(mountains));
+</script>
+</body>
+</html>
