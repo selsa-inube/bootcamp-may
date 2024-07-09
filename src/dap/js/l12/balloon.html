@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>🎈</p>
+
+    <script>
+        let nodoP = document.querySelector("p");
+        let size;
+        const setSize = (newSize) => {
+            size = newSize;
+            nodoP.style.fontSize = size + "px";
+        }
+        setSize(20);
+
+        const increaseSize = (event) => {
+            if (event.key == "ArrowUp") {
+                if (size > 70) {
+                    nodoP.textContent = "💣";
+                    document.body.removeEventListener("keydown", increaseSize);
+                } else {
+                    setSize(size * 1.1);
+                    event.preventDefault();
+                }
+            } else if (event.key == "ArrowDown") {
+                setSize(size * 0.9);
+                event.preventDefault();
+            }
+        }
+        document.body.addEventListener("keydown", increaseSize);
+    </script>
+</body>
+
+</html>
