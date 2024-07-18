@@ -1,49 +1,26 @@
 {
-  "name": "bootcamp",
-  "version": "1.0.0",
-  "description": "Project for bootcamp development tasks",
-  "homepage": "https://github.com/selsa-inube/bootcamp#readme",
-  "main": "index.js",
-  "author": "wfercanas",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/selsa-inube/bootcamp.git"
-  },
-  "keywords": [
-    "bootcamp",
-    "frontend",
-    "html",
-    "css",
-    "javascript",
-    "react",
-    "git"
-  ],
-  "bugs": {
-    "url": "https://github.com/selsa-inube/bootcamp/issues"
-  },
+  "name": "a4-tic-tac-toe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.8.0",
-    "@commitlint/config-conventional": "^17.8.0",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-react": "^7.33.2",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.0.1",
-    "octokit": "^3.1.1",
-    "prettier": "3.0.3"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.4.2",
-    "@fortawesome/free-regular-svg-icons": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "styled-components": "^6.1.5"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
   }
 }
