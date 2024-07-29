@@ -5,8 +5,6 @@ const StyledConversation = styled.div`
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-    /* overflow-y: auto; */
-    /* height: 100%; */
     background-color: #f9f9f9;
 `;
 

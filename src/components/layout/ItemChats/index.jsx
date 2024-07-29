@@ -14,7 +14,7 @@ export const ItemChats = ({chat, handleSelectionPerson}) => {
     return (
         <StyledPerson onClick={()=>handleSelectionPerson(chat.id)}>
             <StyledContainerIcon>
-                <StyledImg src={chat.image} alt="Person" />
+                <StyledImg src={chat.image} alt="Person" $colorBackground={chat.colorBackground}/>
                 {
                     chat.read > 0 && <StyledImgDes>{chat.read}</StyledImgDes>
                 }

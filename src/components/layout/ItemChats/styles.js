@@ -22,6 +22,8 @@ const StyledImg = styled.img`
     height: 3rem;
     border-radius: 50%;
     object-fit: contain;
+    padding: 5px;
+    background-color: ${({ $colorBackground }) => $colorBackground ? $colorBackground : '#c4eafc'};
 `;
 
 const StyledImgDes = styled.div`

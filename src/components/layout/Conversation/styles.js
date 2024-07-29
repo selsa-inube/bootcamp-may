@@ -52,6 +52,20 @@ const StyledConversation = styled.div`
     background-color: #f9f9f9;
     overflow-y: auto;
     height: 80%;
+
+    
+    &::-webkit-scrollbar {
+        width: 8px; 
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #c1c1c1; 
+        border-radius: 4px; 
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1; 
+    }
     
 `;
 

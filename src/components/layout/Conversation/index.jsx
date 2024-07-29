@@ -9,11 +9,12 @@ import { StyledMain,
          StyledContainerMessage,
          StyledInputMessage,
  } from './styles'
-import { MdOutlineLocalPhone, MdOutlineVideocam, MdOutlineMoreVert, MdDone   } from 'react-icons/md'
+import { MdOutlineLocalPhone, MdOutlineVideocam, MdOutlineMoreVert } from 'react-icons/md'
 import { Message } from '../Message';
 import { AvatarConversation } from '../AvatarConversation';
 import { AddMessage } from '../AddMessage';
 import { PersonalInformation } from '@mocks/data/personal';
+import React, { useEffect, useRef } from 'react';
 
 const searchImage = (dataConversation, idPersonMessage ) => {
     if (dataConversation.typeChat === 'group'){
@@ -32,13 +33,21 @@ const searchName = (dataConversation, idPersonMessage ) => {
 }
 
 export const Conversation = ({ dataConversation, idPerson, handleAddMessage }) => {
+    const conversationRef = useRef(null);
 
+    useEffect(() => {
+
+        if (conversationRef.current) {
+            conversationRef.current.scrollTop = conversationRef.current.scrollHeight;
+        }
+
+    }, [ dataConversation, handleAddMessage ]);
   return (
     <StyledMain>
         {
             dataConversation && (
                 <>
-                    <StyleHeader>
+                    <StyleHeader >
                         <StyledContainerName>
                             <StyledImg src={ dataConversation.image } alt="Person" />
                             <div>
@@ -53,7 +62,7 @@ export const Conversation = ({ dataConversation, idPerson, handleAddMessage }) =
                             <MdOutlineMoreVert size="20px" />
                         </StyledIcon>
                     </StyleHeader>
-                    <StyledConversation>
+                    <StyledConversation ref={ conversationRef }>
                         {
                             dataConversation.message.map(message => (
                                 <StyledContainerMessage key={message.id}>

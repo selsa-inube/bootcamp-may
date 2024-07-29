@@ -8,7 +8,7 @@ import { StyledContainer,
 
 const mapperMessage = (message, idPerson) => {
   const messageChat = message.map((chat) => {
-    const {id, name, message, image} = chat;   
+    const {id, name, message, image, colorBackground} = chat;   
     let readMessage = 0,
         idMessageLast = 0,
         lastMessage;
@@ -28,6 +28,7 @@ const mapperMessage = (message, idPerson) => {
       message: text,
       time: lastMessage.time,
       read: readMessage,
+      colorBackground,
       image,
     }
   })

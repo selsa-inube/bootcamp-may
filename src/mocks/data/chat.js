@@ -5,6 +5,7 @@ export const chat = [
         name: 'Juan',
         image:  './src/assets/images/juan.png',
         typeChat: 'individual',
+        colorBackground: '#ffddad',
         message: [
             {
                 id: 1,
@@ -52,6 +53,7 @@ export const chat = [
         name: 'María',
         image: './src/assets/images/sofia.png',
         typeChat: 'individual',
+        colorBackground: '#efa536',
         message: [
             {
                 id: 1,
@@ -176,6 +178,7 @@ export const chat = [
         name: 'Carlos',
         image: './src/assets/images/sebastian.png',
         typeChat: 'individual',
+        colorBackground: '#ffddad',
         message: [
             {
                 id: 1,
@@ -230,6 +233,7 @@ export const chat = [
         name: 'Ana',
         image: './src/assets/images/sara.png',
         typeChat: 'individual',
+        colorBackground: '#36a5ef',
         message: [
             {
                 id: 1,
@@ -277,6 +281,7 @@ export const chat = [
         name: 'Pedro',
         image: './src/assets/images/oscar.png',
         typeChat: 'individual',
+        colorBackground: '#fecad6',
         message: [
             {
                 id: 1,
@@ -325,6 +330,7 @@ export const chat = [
         name: 'Laura',
         image: './src/assets/images/luisa.png',
         typeChat: 'individual',
+        colorBackground: '#dad1fb',
         message: [
             {
                 id: 1,
@@ -357,7 +363,7 @@ export const chat = [
                 idPerson: 1006,
                 text: 'He ido al gimnasio y he hecho la compra.',
                 time: '10:04',
-                read: false
+                read: true
             },
             {
                 id: 6,
@@ -375,17 +381,20 @@ export const chat = [
         persons:[{
             id: 1028,
             name: 'Sofia',
-            image: './src/assets/images/sofia.png'
+            image: './src/assets/images/sofia.png',
+            colorBackground: '#ffddad'
         },
         {
             id: 1001,
             name: 'Juan',
-            image: './src/assets/images/juan.png'
+            image: './src/assets/images/juan.png',
+            colorBackground: '#efa536'
         },
         {
             id: 1002,
             name: 'María',
-            image: './src/assets/images/maria.png'
+            image: './src/assets/images/maria.png',
+            colorBackground: '#36a5ef'
         }],
         message: [
             {
@@ -444,17 +453,20 @@ export const chat = [
         persons:[{
             id: 1028,
             name: 'Sofia',
-            image: './src/assets/images/sofia.png'
+            image: './src/assets/images/sofia.png',
+            colorBackground: '#ffddad'
         },
         {
             id: 1003,
             name: 'Carlos',
-            image: './src/assets/images/carlos.png'
+            image: './src/assets/images/carlos.png',
+            colorBackground: '#efa536'
         },
         {
             id: 1004,
             name: 'Ana',
-            image: './src/assets/images/ana.png'
+            image: './src/assets/images/ana.png',
+            colorBackground: '#dad1fb'
         }],
         message: [
             {
